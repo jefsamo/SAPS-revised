@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="583.0" prefWidth="687.0" style="-fx-background-color: #63E799;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DataController">
+   <children>
+      <TableView fx:id="table" layoutX="107.0" layoutY="63.0" prefHeight="429.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="tblFirstname" prefWidth="148.0" text="FIRST NAME" />
+          <TableColumn fx:id="tblLastname" prefWidth="180.0" text="LAST NAME" />
+            <TableColumn fx:id="tblScore" minWidth="0.0" prefWidth="165.0" text="SCORE" />
+        </columns>
+      </TableView>
+      <Text layoutX="272.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT PERFORMANCE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnLoad" buttonType="RAISED" layoutX="107.0" layoutY="524.0" onAction="#loadData" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #ffffff;" text="LOAD DATA" textFill="#63e799" />
+      <ImageView fx:id="arrow" fitHeight="35.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

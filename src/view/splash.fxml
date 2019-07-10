@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="330.0" prefWidth="575.0" style="-fx-background-color: #63E799;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashController">
+   <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOFTWARE PACKAGE FOR COMPONENTS SIZING OF STAND ALONE PHOTOVOLTAIC SYSTEM" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/solar.jpeg" />
+         </image>
+      </ImageView>
+      <Circle fx:id="rect" fill="WHITE" layoutX="37.0" layoutY="285.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="rect1" fill="WHITE" layoutX="37.0" layoutY="285.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="rect2" fill="WHITE" layoutX="37.0" layoutY="285.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="rect3" fill="WHITE" layoutX="37.0" layoutY="285.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="rect4" fill="WHITE" layoutX="37.0" layoutY="285.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Text fill="WHITE" layoutX="284.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(SAP)" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

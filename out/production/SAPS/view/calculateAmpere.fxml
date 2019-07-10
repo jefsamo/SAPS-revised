@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="624.0" prefWidth="906.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculateAmpereController">
+   <children>
+      <Pane prefHeight="624.0" prefWidth="273.0" style="-fx-background-color: #63E799;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="77.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMP HOUR LOAD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="noOfAppliance" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="80.0" promptText="No of Appliance">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="powerRating" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="36.0" layoutY="146.0" promptText="Power rating ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="dailyDuty" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="36.0" layoutY="214.0" promptText="Daily Duty">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="weeklyDuty" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="36.0" layoutY="285.0" promptText="Weekly Duty Cycle">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nominalVoltage" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="349.0" promptText="V. System Nominal">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="efficiency" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="36.0" layoutY="424.0" promptText="Efficiency">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMP HOUR LOAD is :" />
+            <Text fx:id="loadAmp" fontSmoothingType="LCD" layoutX="134.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAHL" buttonType="RAISED" layoutX="17.0" layoutY="551.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="AHL" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnResetAHL" buttonType="RAISED" layoutX="100.0" layoutY="551.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="RESET" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnTotalAHL" buttonType="RAISED" layoutX="183.0" layoutY="551.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="TOTAL" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total AMP HOUR LOAD is :" />
+            <Text fx:id="totalAHL" fontSmoothingType="LCD" layoutX="168.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="287.0" prefHeight="624.0" prefWidth="305.0" style="-fx-background-color: #63E799;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORRECTED AMP/ DESIGN CURRENT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="wireEfficiency" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="86.0" promptText="Wire Efficiency">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="batteryEfficiency" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="180.0" promptText="Battery Efficiency">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="peakSun" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="256.0" promptText="Peak Sun Hrs">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Text fontSmoothingType="LCD" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORECTED AMP LOAD is :" />
+            <Text fx:id="correctedAmpLoad" fontSmoothingType="LCD" layoutX="177.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAHC" buttonType="RAISED" layoutX="6.0" layoutY="546.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="AHC" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnResetAHC" buttonType="RAISED" layoutX="92.0" layoutY="546.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="RESET" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDirectCurrent" buttonType="RAISED" layoutX="173.0" layoutY="546.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="D. CURRENT" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Text fontSmoothingType="LCD" layoutX="27.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESIGN CURRENT is :" />
+            <Text fx:id="designCurrent" fontSmoothingType="LCD" layoutX="146.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="606.0" prefHeight="624.0" prefWidth="299.0" style="-fx-background-color: #63E799;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DERATED CURRENT/ PARRALEL MODULE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="moduleDerate" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="55.0" layoutY="87.0" promptText="Module Derate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="ratedOutput" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="55.0" layoutY="182.0" promptText="MFR Rated Output">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Text fontSmoothingType="LCD" layoutX="59.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DERATED DESIGN is :" />
+            <Text fx:id="deratedDesign" fontSmoothingType="LCD" layoutX="182.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnResetDeratedModule" buttonType="RAISED" layoutX="19.0" layoutY="544.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="RESET" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnOk" buttonType="RAISED" layoutX="105.0" layoutY="544.0" prefHeight="16.0" prefWidth="79.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="OK" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnNext" buttonType="RAISED" layoutX="192.0" layoutY="544.0" prefHeight="30.0" prefWidth="101.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" text="NEXT" textFill="#63e799">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Text fontSmoothingType="LCD" layoutX="59.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARALLEL MODULE is :" />
+            <Text fx:id="parallelModule" fontSmoothingType="LCD" layoutX="182.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="close" fill="WHITE" layoutX="270.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="30.7265625">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
